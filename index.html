@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnhGiaPha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>ĐĂNG NHẬP</header>
+    <form id="form_id" name="myform">
+      <div class="input-field">
+        <input type="text" required="" id="username">
+        <label>Tài Khoản</label>
+      </div>
+      <div class="input-field">
+        <input class="pswrd" type="password" required="" id="password">
+        <span class="show">SHOW</span>
+        <label>Mật Khẩu</label>
+      </div>
+      <div class="button">
+        <div class="inner">
+        </div>
+        <button onclick="signin(); return false;">ĐĂNG NHẬP</button>
+      </div>
+    </form>
+  </div>
+  <script>
+    var input = document.querySelector('.pswrd');
+    var show = document.querySelector('.show');
+    show.addEventListener('click', active);
+    function active() {
+      if (input.type === "password") {
+        input.type = "text";
+        show.style.color = "#1DA1F2";
+        show.textContent = "HIDE";
+      } else {
+        input.type = "password";
+        show.textContent = "SHOW";
+        show.style.color = "#111";
+      }
+    }
+    function signin(e) {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if (username == "admin" && password == "123456") {
+          window.location.href = "index3.html";
+      }
+      else {
+        alert("Tài khoản hoặc Mật khẩu bị sai");
+      }
+    }
+  </script>
+</body>
+
+</html>

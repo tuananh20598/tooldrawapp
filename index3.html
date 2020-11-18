@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnhGiaPha</title>
+    <link rel="stylesheet" href="inevn.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1 class="tac fs3 mb25 mt10">
+            <button class="btn pa10 pa cper" style="top: 20px; left: 100px;">Tạo mới</button>
+            <div class="btn ptb10 plr25 pa cper" style="top: 20px; left: 200px; font-size: 15px;">Lưu</div>
+            <span>AnhAPP</span>
+            <a href="index.html" class="fs20p pa" style="right: 120px; top: 30px; border-bottom: 1px solid #000;padding-bottom: 3px;">Đăng xuất</a>
+        </h1>
+
+        <div class="container df fwnw">
+            <div class="tool col-xs-2 ">
+                <div class="b1s bc0 h550">
+                    <div class="plr10" style="padding-top: 20px;">
+                        <div class="addhinhmeo dib cper pa10">
+                            <img src="image/hinhmeo.png" style="width: 50px;">
+                        </div>
+                        <span>Start / End</span>
+                    </div>
+
+                    <div class="pa10">
+                        <div class="addhinhthoi dib cper pa10">
+                            <img src="image/hinhthoi.png" style="width: 50px;">
+                        </div>
+                        <span>Decision</span>
+                    </div>
+
+                    <div class="pa10">
+                        <div class="addhinhchunhat dib cper pa10">
+                            <img src="image/hinhchunhat.png" style="width: 50px;">
+                        </div>
+                        <span>Process</span>
+                    </div>
+
+                    <div class="pa10">
+                        <div class="addhinhbinhhanh dib cper pa10">
+                            <img src="image/hinhbinhhanh.png" style="width: 50px;">
+                        </div>
+                        <span>Input / Output</span>
+                    </div>
+
+                    <div class="pa10 pb20">
+                        <div class="adddatabase dib cper pa10">
+                            <img src="image/database.png" style="width: 50px;">
+                        </div>
+                        <span>Database</span>
+                    </div>
+
+                    <div class="plr10">
+                        <div class="adddocument dib cper pa10">
+                            <img src="image/document.png" style="width: 50px;">
+                        </div>
+                        <span>Document</span>
+                    </div>
+
+                    <div class="plr10">
+                        <div class="addtext dib cper pa10">
+                            <span class="fs25">T</span><span class="fs12">ext</span>
+                        </div>
+                        <span>Text</span>
+                    </div>
+
+                    <div class="plr10">
+                        <div class="dib cper pa10" onclick="connect()">
+                            <img src="image/flowline.png" style="width: 50px;">
+                        </div>
+                        <span>Flowline</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="draw col-xs-10 oh b1s bc0 ml50 h550 os" draggable="true">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="add.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
